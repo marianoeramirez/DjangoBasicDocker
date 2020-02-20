@@ -1,4 +1,4 @@
-FROM python:3.7.4-alpine3.10
+FROM python:3.8-alpine3.11
 ARG REQUIREMENTS
 
 RUN apk add --no-cache --virtual .build-deps \
@@ -20,6 +20,6 @@ RUN apk add --no-cache --virtual .build-deps \
         --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
         geos-dev \
         gdal-dev proj proj-dev \
-    && pip3 install --no-cache-dir Django==2.2.4 pytz==2019.2 \
-       python-dotenv==0.10.3 psycopg2-binary==2.8.3 argon2-cffi Pillow redis celery 
+    && pip3 install --no-cache-dir Django==2.2.10 pytz==2019.3 \
+       python-dotenv==0.11.0 psycopg2-binary==2.8.4 argon2-cffi==19.2.0 Pillow==7.0.0 redis==3.4.1 celery==4.4.0
     
