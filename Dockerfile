@@ -20,6 +20,7 @@ RUN apk add --no-cache --virtual .build-deps \
         --repository http://dl-cdn.alpinelinux.org/alpine/edge/main \
         geos-dev \
         gdal-dev proj proj-dev \
+    && pip3 install --upgrade pip \
     && pip3 install --no-cache-dir Django==2.2.10 pytz==2019.3 \
        python-dotenv==0.11.0 psycopg2-binary==2.8.4 argon2-cffi==19.2.0 Pillow==7.0.0 redis==3.4.1 celery==4.4.0
     
