@@ -21,6 +21,6 @@ RUN apk add --no-cache --virtual .build-deps \
         geos-dev \
         gdal-dev proj proj-dev \
     && pip3 install --no-cache-dir --upgrade pip \
-    && pip3 install --no-cache-dir Django==3.1.4 pytz==2020.4 \
-       python-dotenv==0.15.0 psycopg2-binary==2.8.6 argon2-cffi==20.1.0 Pillow==8.0.1 redis==3.5.3 celery==4.4.7
+    && pip3 install --no-cache-dir Django==4.0.5 pytz==2022.1 \
+       python-dotenv==0.20.0 psycopg2-binary==2.9.3 argon2-cffi==21.3.0 Pillow==9.1.1 redis==4.3.3 celery==5.2.7
     
